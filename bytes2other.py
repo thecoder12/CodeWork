@@ -16,15 +16,15 @@ def bytes2other( size, size_compare ):
     size_compare = size_compare[:-2]
     
     ### kb onvert
-    if para == 'kb':
+    if para == 'kb' or para == 'Kb' or para == 'KB' or para == 'K':
         s = convert2size(int(float(size)),1)
 
     ## mb convert
-    if para == 'mb':
+    if para == 'mb' or para == 'Mb' or para == 'MB' or para == 'M':
         s = convert2size(int(float(size)),2)
 
     ## gb convert
-    if para == 'gb':
+    if para == 'gb' or para == 'Gb' or para == 'GB' or para == 'G':
         s = convert2size(int(float(size)),3)
 
     if s == int(float(size_compare)):
