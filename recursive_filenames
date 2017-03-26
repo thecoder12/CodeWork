@@ -1,0 +1,8 @@
+import os
+
+def print_files(search_path):
+    for dirpath, dirnames, filenames in os.walk(search_path):
+        if filenames:
+            print(filenames)
+
+print_files('/home/dw/')
